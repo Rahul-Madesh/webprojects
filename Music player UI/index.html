@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sign in with Google</title>
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background-color: #0f0f0f;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 900px;
+        height: 500px;
+        background-color: #121212;
+        border-radius: 8px;
+        display: flex;
+        padding: 30px;
+    }
+
+    /* Left section */
+    .left {
+        flex: 1;
+        padding-right: 40px;
+        border-right: 1px solid #2a2a2a;
+    }
+
+    .google-title {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .google-title span {
+        margin-left: 10px;
+        font-weight: 500;
+    }
+
+    .left h1 {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .left p {
+        color: #b0b0b0;
+        font-size: 16px;
+    }
+
+    /* Right section */
+    .right {
+        flex: 1;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .account {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .account:hover {
+        background-color: #1e1e1e;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #5f6368;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        margin-right: 15px;
+    }
+
+    .details {
+        line-height: 1.4;
+    }
+
+    .details .name {
+        font-size: 15px;
+    }
+
+    .details .email {
+        font-size: 13px;
+        color: #b0b0b0;
+    }
+
+    .divider {
+        height: 1px;
+        background-color: #2a2a2a;
+        margin: 10px 0;
+    }
+
+    .use-another {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .use-another:hover {
+        background-color: #1e1e1e;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid #5f6368;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #9aa0a6;
+    }
+
+    .footer a {
+        color: #8ab4f8;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left -->
+    <div class="left">
+        <div class="google-title">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="22">
+            <span>Sign in with Google</span>
+        </div>
+
+        <h1>Choose an account</h1>
+        <p>to continue to GitHub</p>
+    </div>
+
+    <!-- Right -->
+    <div class="right">
+
+        <div class="account">
+            <div class="avatar">I</div>
+            <div class="details">
+                <div class="name">Indhu Indhu</div>
+                <div class="email">indhunallusamy9@gmail.com</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="account">
+            <div class="avatar">R</div>
+            <div class="details">
+                <div class="name">RAHUL M</div>
+                <div class="email">rahulm.ad24@bitsathy.ac.in</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="use-another">
+            <div class="icon">👤</div>
+            <div>Use another account</div>
+        </div>
+
+        <div class="footer">
+            Before using this app, you can review GitHub’s
+            <a href="#">privacy policy</a> and
+            <a href="#">Terms of Service</a>.
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
