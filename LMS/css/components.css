@@ -45,7 +45,10 @@
     margin-top: 10px;
     font-size: 13px;
 }
-
+body.dark .card{
+     background: #1f2937;
+  color: white;
+}
 
 /* Side-Bar */
 
@@ -88,6 +91,7 @@
     width: 100%;
     padding: 5px;
     height: 70px;
+    justify-content: space-between;
     box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.3);
     display: flex;
     align-items: center;
@@ -176,3 +180,33 @@ a{
 .status.pending { color: orange;}
 .status.submitted { color: green;}
 .status.late { color: red;}
+
+/* profile css */
+.profile-card{
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    margin: 10px;
+}
+.profile-card input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+.profile-card button{
+    padding: 8px 12px;
+    cursor: pointer;
+}
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark .profile-card,
+body.dark .course-card,
+body.dark .assignment-card {
+  background: #1f2937;
+  color: white;
+}
+

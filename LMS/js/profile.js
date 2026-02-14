@@ -28,39 +28,23 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
 });
 
+document.addEventListener("DOMContentLoaded",() =>{
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const editBtn = document.getElementById("editBtn");
 
-// Dynamic Dashboard
+    let isEditMode = false;
 
-const dashboardData = [
-    {title: "Total Courses", value : 6},
-    {title: "Asssignments Due", value : 3},
-    {title: "Attendance", value : "85%"},
-    {title: "GPA", value : 8.4}
-];
+    editBtn.addEventListener("click",() =>{
+        isEditMode = !isEditMode;
 
-const cardsContainer = document.getElementById("dashboardCards");
+        nameInput.disabled = !isEditMode;
+        emailInput.disabled = !isEditMode;
 
-dashboardData.forEach(item => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.innerHTML = `
-        <h3>${item.title}</h3>
-        <p>${item.value}</p>
-    `;
+        editBtn.textContent = isEditMode ? "Save Profile" : "Edit Profile";
 
-    cardsContainer.appendChild(card);
-});
-
-document.addEventListener("DOMContentLoaded", () =>{
-    const currentPage = window.location.pathname.split("/").pop();
-    const menuItems = document.querySelectorAll("#navMenu li");
-
-    menuItems.forEach(item =>{
-        if(item.dataset.page === currentPage){
-            item.classList.add("active");
+        if(!isEditMode){
+            alert("Profile updated successfully");
         }
-        item.addEventListener("click",() =>{
-            window.location.href = item.dataset.page;
-        });
     });
 });

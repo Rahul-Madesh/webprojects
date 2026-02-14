@@ -20,4 +20,17 @@ html { font-size: 16px;}
     --border-color: #d1d5db;
     --hover-color: hsl(221, 83%, 43%);
 };
+/* profile */
+body.dark {
+  background: #111827;
+  color: #f9fafb;
+}
+
+body.dark .profile-card,
+body.dark .course-card,
+body.dark .assignment-card {
+  background: #1f2937;
+  color: white;
+}
+
 
