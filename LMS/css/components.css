@@ -160,3 +160,19 @@ a{
     background: #e5e7eb;
     color: #374151;
 }
+
+/* assignments */
+.assignment-card{
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.assignment-card button{
+    margin-top: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.status.pending { color: orange;}
+.status.submitted { color: green;}
+.status.late { color: red;}
